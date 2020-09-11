@@ -19,7 +19,7 @@ app = express();
 
 // middleware
 app.use(bodyParser.json())
-app.use('/movies', moviesRouter)
-app.use('/characters', charactersRouter)
+app.use('/api/movies', moviesRouter)
+app.use('/api/characters', charactersRouter)
 
 app.listen(PORT, () => console.log("Server Started ..."));
