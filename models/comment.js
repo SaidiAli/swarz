@@ -25,4 +25,19 @@ const Comment = sequelize.define("Comment", {
   },
 });
 
+Comment.sync({
+  force: false,
+  logging: false
+})
+.then(() => {
+  Comment.create({
+    comment: "Test Comment",
+    movie_title: "A New Hope",
+    ip_address: "127.1.1.1"
+  })
+})
+.catch((error)=> {
+  console.error('Error creating comments tabel', error)
+})
+
 module.exports = Comment;
