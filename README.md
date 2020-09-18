@@ -1,5 +1,5 @@
 # Swarz API
-Start wars API wrapper
+Star wars API wrapper
 
 Url: [Live Server](https://swarz.herokuapp.com)
 
